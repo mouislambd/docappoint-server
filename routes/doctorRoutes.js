@@ -34,7 +34,7 @@ router.get('/:id', async (req, res) => {
     }
 }) 
 // Seed doctors
-router.post('/seed', async (req, res) => {
+router.get('/seed', async (req, res) => {
     try {
         await Doctor.deleteMany()
         const doctors = [
